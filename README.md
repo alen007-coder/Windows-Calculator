@@ -1,2 +1,3 @@
 # Windows-Calculator
 A basic simple calculator using python tkinter
+This file, calculator.py, is the main script for a simple calculator application built using Python's Tkinter library. The code creates a graphical user interface (GUI) calculator that allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, division, and percentage calculations. The calculator displays buttons for numbers, operations, and functions (like clear and equals), and shows the results on a label. The application window is styled and arranged to mimic a basic calculator layout.
