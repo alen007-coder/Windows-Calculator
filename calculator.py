@@ -1,7 +1,5 @@
 from tkinter import *
 
-
-
 window = Tk()
 window.title("Calculator")
 window.geometry("570x600+100+200")
@@ -18,7 +16,6 @@ def clear():
     equation=""
     label_result.config(text=equation)
 
-
 def calculate():
     global equation
     result=""
@@ -30,18 +27,13 @@ def calculate():
             equation=""
         label_result.config(text=result)
 
-
-
-
 label_result = Label(window, text="",width=25,height=2,font=("Arial",30),bg="gray26")
 label_result.pack()
-
 
 Button(window,text="C",width=5,height=1,font=("Arial",30,"bold"),bd=1,fg='#fff',bg='#3697f5',command=lambda: clear()).place(x=10,y=100)
 Button(window,text="/",width=5,height=1,font=("Arial",30,"bold"),bd=1,fg='#fff',bg='#2a2d36',command=lambda: show("/")).place(x=150,y=100)
 Button(window,text="%",width=5,height=1,font=("Arial",30,"bold"),bd=1,fg='#fff',bg='#2a2d36',command=lambda: show("%")).place(x=290,y=100)
 Button(window,text="*",width=5,height=1,font=("Arial",30,"bold"),bd=1,fg='#fff',bg='#2a2d36',command=lambda: show("*")).place(x=430,y=100)
-
 
 Button(window,text="7",width=5,height=1,font=("Arial",30,"bold"),bd=1,fg='#fff',bg='#2a2d36',command=lambda: show("7")).place(x=10,y=200)
 Button(window,text="8",width=5,height=1,font=("Arial",30,"bold"),bd=1,fg='#fff',bg='#2a2d36',command=lambda: show("8")).place(x=150,y=200)
@@ -60,9 +52,5 @@ Button(window,text="0",width=11,height=1,font=("Arial",30,"bold"),bd=1,fg='#fff'
 
 Button(window,text=".",width=5,height=1,font=("Arial",30,"bold"),bd=1,fg='#fff',bg='#2a2d36',command=lambda: show(".")).place(x=290,y=500)
 Button(window,text="=",width=5,height=3,font=("Arial",30,"bold"),bd=1,fg='#fff',bg='#fe9037',command=lambda: calculate()).place(x=430,y=400)
-
-
-
-
 
 window.mainloop()
